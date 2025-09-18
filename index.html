@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8"/>
-  <title>YourFinalChallenge</title>
+  <title>OurFinalChallenge</title>
   <style>
     body {
       font-family: system-ui, Arial, sans-serif;
@@ -13,14 +13,14 @@
       min-height: 100vh;
       gap: 12px;
       background-color: #000000; /* pure black background */
-      color: #130466; /* text color */
+      color: #130466; /* deep purple text color */
     }
     input, button {
       padding: 10px;
       font-size: 16px;
-      color: #06402B; 
+      color: #130466; 
       background-color: #000000; 
-      border: 2px solid #06402B;
+      border: 2px solid #130466;
       border-radius: 5px;
     }
     button {
@@ -31,10 +31,10 @@
       margin-bottom: 20px;
     }
     p {
-      color: #06402B;
+      color: #130466;
     }
     input::placeholder {
-      color: #06402B;
+      color: #130466;
       opacity: 0.6;
     }
   </style>
@@ -50,13 +50,12 @@
     const rightPassword = "NSnW"; // correct password
     const successUrl = "https://youtu.be/7SKgbQncGEQ";     // link if correct
     const failureLinks = [                 // 5 possible failure URLs
-      "https://youtu.be/ujgIQt5YfSo?si=tjyZtfb7Z11l1aFX",
-      "https://www.youtube.com/watch?v=PGJKeESLBpQ&list=PLYqVVkIzTxy4iop5uhckNfBsKMjDugxNp&index=7",
-      "https://www.youtube.com/watch?v=ybd1KCx6ODQ",
-      "https://www.youtube.com/watch?v=ZemuJ73oT5U&list=PLYqVVkIzTxy4iop5uhckNfBsKMjDugxNp&index=168",
-      "https://www.youtube.com/watch?v=oyFQVZ2h0V8&list=PLYqVVkIzTxy4iop5uhckNfBsKMjDugxNp&index=198"
+      "https://youtu.be/PGJKeESLBpQ?si=D64Xl7NOA6Ivqi_5",
+      "https://youtu.be/oyFQVZ2h0V8?si=-2tO7BXR03CyCGkG",
+      "https://youtu.be/ZemuJ73oT5U?si=kVbOloDQTDEjfA7Z",
+      "https://youtu.be/ybd1KCx6ODQ?si=bpEex2Yb_uWdzTBl",
+      "https://youtu.be/j-SgGHlZXQc?si=q80NwjMpBqCWPndT"
     ];
-    
 
     function getRandomFailureLink() {
       const index = Math.floor(Math.random() * failureLinks.length);
